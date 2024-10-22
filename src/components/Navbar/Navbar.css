@@ -1,0 +1,101 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+  background-color: inherit;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.nav-links {
+  display: block;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: rgb(226, 2, 2);
+  position: absolute;
+  left: 0;
+  top: 25px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .nav-list {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      flex-direction: column;
+      background-color: #333;
+      align-items: center;
+      gap: 1.5rem;
+      z-index: 999;
+  }
+
+  .nav-list.active {
+      max-height: 300px;
+      padding-top: 30px;
+      padding-bottom: 30px; 
+      box-shadow: 1px 8px 5px red;/* Expands the menu when hamburger is clicked */
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .navbar-logo {
+      font-size: 1.0rem;
+  }
+}

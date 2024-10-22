@@ -1,0 +1,145 @@
+/* Container for the hero section */
+.hero-container {
+    background: rgba(7, 7, 7, 0.7); /* Darker, more opaque background */
+    color: rgb(252, 252, 252);
+    border-radius: 20px; /* Increased border radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    padding: 40px; /* Increased padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(20px); /* Increased blur for a more dramatic effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtler border */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    gap: 30px; /* Add space between child elements */
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+}
+
+/* Container for the text content */
+.text-container {
+    flex: 1;
+    min-width: 300px; /* Ensure minimum width for readability */
+    text-align: left;
+    padding: 0 5%; /* Reduced padding */
+}
+
+/* Image container */
+.image-container {
+    flex: 1;
+    min-width: 300px; /* Ensure minimum width for image visibility */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    padding: 0;
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+}
+
+/* Style for the image */
+.hero-image {
+    width: 100%;
+    max-width: 500px; /* Slightly larger max-width */
+    height: auto;
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* More pronounced, softer shadow */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+}
+
+.hero-image:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Text styles */
+.text-h1 {
+    font-size: 3rem; /* Larger font size */
+    font-weight: 700; /* Bolder font */
+    margin-bottom: 10px;
+    letter-spacing: -1px; /* Tighter letter spacing for modern look */
+}
+
+.text-h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    opacity: 0.9; /* Slightly reduced opacity for hierarchy */
+}
+
+.text-h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.text-par {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+/* Button style */
+.hero-button {
+    margin-left: -10px; /* Move the button 10px to the left */
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ff3333; /* Brighter red */
+    color: white;
+    border: none;
+    border-radius: 30px; /* More rounded corners */
+    outline: none;
+    box-shadow: 0 4px 15px rgba(255, 51, 51, 0.3); /* Soft glow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.hero-button:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 20px rgba(255, 51, 51, 0.4); /* Enhanced glow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 30px;
+        flex-direction: column; /* Stack elements vertically on mobile */
+        margin-top: 60px; /* Add space for the navigation menu */
+    }
+
+    .text-container {
+        padding: 0;
+        order: 1; /* Ensure text appears first on mobile */
+    }
+
+    .image-container {
+        order: 3; /* Ensure image appears last on mobile */
+        margin-top: 20px; /* Add some space above the image */
+    }
+
+    .hero-button {
+        order: 2; /* Ensure button appears between text and image on mobile */
+        align-self: flex-start; /* Align button to the left */
+        margin-top: 20px; /* Add some space above the button */
+    }
+
+    .hero-image {
+        max-width: 100%; /* Ensure the image doesn't overflow on small screens */
+    }
+
+    .text-h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-h3 {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,77 @@
+/* Wrapper for the entire footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: silver;
+}
+
+/* Left-aligned copyright text */
+.copyright-text {
+    text-align: left;
+    font-size: 16px; /* Default size */
+}
+
+/* Social buttons */
+.social-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Basic styles for the social buttons */
+.social-button {
+    display: inline-block;
+    padding: 10px 15px; /* Rectangular shape */
+    color: silver;
+    text-decoration: none;
+    border: 2px solid silver;
+    border-radius: 10px; /* Slight rounding for smooth corners */
+    transition: border-color 0.3s ease, color 0.3s ease;
+    font-size: 16px; /* Default font size */
+    background-color: #333;
+    text-align: center;
+}
+
+/* Hover effect for the social buttons */
+.social-button:hover {
+    border-color: red; /* Only the border changes to red */
+    color: silver; /* Ensure the text color remains silver */
+}
+
+/* Instagram-specific styles */
+.instagram:hover {
+    color: silver;
+}
+
+/* Facebook-specific styles */
+.facebook:hover {
+    color: silver;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        text-align: center;
+    }
+
+    .copyright-text, .social-button {
+        font-size: 14px; /* Smaller text on mobile */
+    }
+
+    .social-button {
+        padding: 8px 12px; /* Slightly smaller padding on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .copyright-text, .social-button {
+        font-size: 12px; /* Even smaller text for very small devices */
+    }
+
+    .social-button {
+        padding: 6px 10px; /* Smaller padding for compact view */
+    }
+}

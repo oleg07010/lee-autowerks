@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import AboutUs from './pages/AboutUs/AboutUs';
+import Footer from './components/Footer/Footer';
+import Divider from '@mui/material/Divider';
+// Add this import
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <NavBar />
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/services' element={<Services/>} />
+            <Route path='/about-us' element={<AboutUs/>} />
+          </Routes>
+        </Layout>
+        <Divider /> 
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 

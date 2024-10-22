@@ -1,0 +1,98 @@
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(7, 7, 7, 0.7); /* Darker, more opaque background */
+  color: rgb(252, 252, 252);
+  border-radius: 20px; /* Increased border radius */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  padding: 40px; /* Increased padding */
+  max-width: 1200px;
+  margin: 0 auto;
+  backdrop-filter: blur(20px); /* Increased blur for a more dramatic effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtler border */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsive layout */
+  gap: 30px; /* Add space between child elements */
+  position: relative; /* Add this */
+  z-index: 1; /* Add this */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px;
+  background: rgba(7, 7, 7, 0.7);
+  color: rgb(252, 252, 252);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative; /* Add this */
+}
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  display: inline-block; /* Add this */
+  max-width: calc(100% - 220px); /* Add this */
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.about-avatar {
+  top: -70px; /* Adjust as needed */
+  right: -700px; /* Adjust as needed */
+  width: 500px; /* Increase size as desired */
+  height: auto; /* Maintain aspect ratio */
+}
