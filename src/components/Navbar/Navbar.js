@@ -28,9 +28,6 @@ export const NavBar = () => {
                     <NavLink className="nav-link" to="/" onClick={toggleMenu}>Homepage</NavLink>
                 </li>
                 <li>
-                    <NavLink className="nav-link" to="/services" onClick={toggleMenu}>Services</NavLink>
-                </li>
-                <li>
                     <NavLink className="nav-link" to="/about-us" onClick={toggleMenu}>About Us</NavLink>
                 </li>
             </ul>
