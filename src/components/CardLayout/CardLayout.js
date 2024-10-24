@@ -14,7 +14,7 @@ const CardLayout = () => {
           <img className="card-image" src={luxurycar} alt="Mercedes Repair" />
           <div className="card-overlay">
             <h2 className="card-title">Maintenance</h2>
-            <p>German car = maintenance is important.</p>
+            <p>German car require on-time maintenance.</p>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ const CardLayout = () => {
           <img className="card-image" src={classiccar} alt="Classic German Cars" />
           <div className="card-overlay">
             <h2 className="card-title">Classic Cars</h2>
-            <p>We will restore your beautiful classic to it's original glory.</p>
+            <p>We will restore your beautiful classic to its original glory.</p>
           </div>
         </div>
       </div>

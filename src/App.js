@@ -2,7 +2,6 @@ import './App.css';
 import { NavBar } from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Services from './pages/Services';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Footer from './components/Footer/Footer';
 import Divider from '@mui/material/Divider';
