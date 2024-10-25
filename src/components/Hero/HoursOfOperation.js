@@ -11,7 +11,7 @@ const HoursOfOperation = () => {
     ];
 
     return (
-        <Box sx={{ marginTop: 2 }}>
+        <Box sx={{ marginTop: 3 }}>
             <Typography variant="h6" component="h4" gutterBottom>
                 Hours of Operation
             </Typography>
@@ -24,7 +24,14 @@ const HoursOfOperation = () => {
             <Box sx={{ paddingTop: '20px' }}>
                 <Typography variant="body2">
                     <Link href="tel:201-945-2011" sx={{ color: 'white', textDecoration: 'none' }}>
-                       Tel: (201) 945-2011
+                        (201) 945-2011
+                    </Link>
+                </Typography>
+            </Box>
+            <Box sx={{ paddingTop: '10px' }}>
+                <Typography variant="body2">
+                    <Link href="https://maps.app.goo.gl/VXV5yeQ5CZ5T3RHi7" sx={{ color: 'white', textDecoration: 'none' }}>
+                        295 Bergen Turnpike Suite K, Ridgefield Park, NJ
                     </Link>
                 </Typography>
             </Box>

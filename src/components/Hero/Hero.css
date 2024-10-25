@@ -85,7 +85,7 @@
 .hero-button {
     text-decoration: none;
     margin-left: -10px; /* Move the button 10px to the left */
-    padding: 12px 30px;
+    padding: 20px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -96,6 +96,10 @@
     outline: none;
     box-shadow: 0 4px 15px rgba(255, 51, 51, 0.3); /* Soft glow effect */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-button:hover {
