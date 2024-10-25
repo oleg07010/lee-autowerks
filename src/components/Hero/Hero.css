@@ -83,6 +83,7 @@
 
 /* Button style */
 .hero-button {
+    text-decoration: none;
     margin-left: -10px; /* Move the button 10px to the left */
     padding: 12px 30px;
     font-size: 1.1rem;

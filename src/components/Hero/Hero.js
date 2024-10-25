@@ -15,7 +15,7 @@ const Hero = () => {
                         <h1 className="text-h1">WE REPAIR GERMAN CARS</h1>
                         <h2 className="text-h2">THE RIGHT WAY</h2>
                         <h3 className="text-h3">THE FIRST TIME</h3>
-                        <button href="tel:201-945-2011" className="hero-button">Book an appointment</button>
+                        <a href="tel:201-945-2011" className="hero-button">Book an appointment</a>
                         <HoursOfOperation /> 
                     </div>
                 </Grid>
